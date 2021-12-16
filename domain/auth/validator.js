@@ -17,9 +17,11 @@ export const registerValidator = () => {
             .isString()
             .exists(),
         body("phone")
-            .isString(),
+            .isString()
+            .optional(),
         body("name")
-            .isString(),
+            .isString()
+            .optional(),
     ];
 }
 
